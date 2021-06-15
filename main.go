@@ -2,11 +2,12 @@ package main
 
 import (
 	"fmt"
+	"go_level_2/counter"
 	"go_level_2/transform"
 )
 
 func main() {
-	RunTask1()
+	RunTask2()
 }
 
 func RunTask1() {
@@ -32,5 +33,15 @@ func RunTask1() {
 		fmt.Println(ok)
 	} else {
 		fmt.Println(user)
+	}
+}
+
+func RunTask2() {
+	result, err := counter.CountAsyncFunc("my.go", "h")
+
+	if err != nil {
+		fmt.Println(err)
+	} else {
+		fmt.Println(result)
 	}
 }
