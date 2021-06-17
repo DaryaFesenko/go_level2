@@ -14,7 +14,6 @@ var (
 )
 
 func main() {
-
 	remove = flag.Bool("r", false, "remove duplicate")
 	path = flag.String("p", "C:\\", "directory path")
 

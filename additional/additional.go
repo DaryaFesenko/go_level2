@@ -30,7 +30,7 @@ func CreateDuplicateFile(path string) []string {
 	for i := 0; i < n; i++ {
 		for name, pathFile := range list {
 			copy(path+"/copy", pathFile, name)
-			listCopy = append(listCopy, path+"/copy/"+name)
+			listCopy = append(listCopy, path+"\\copy\\"+name)
 			break
 		}
 	}
